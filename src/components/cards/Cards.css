@@ -1,0 +1,54 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: rgb(247, 236, 223);
+    border: 1px dotted rgb(237, 14, 203);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+}
+
+.card__delete {
+    margin-left: auto;
+    background-color: rgb(210, 237, 255);
+    cursor: pointer;
+}
+
+.card__delete:hover {
+    background-color: darkred;
+    color:aliceblue
+}
+
+.card__finish {
+    margin-left: auto;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem 0 0 0;
+    border-top: 1px dashed rgb(255, 234, 182);
+    margin: 1rem 0 0 0;
+}
+
+.card__header {
+    font-size: large;
+    padding: 0 0 1rem 0;
+}
+
+.btn-primary {
+    background-color: blanchedalmond;
+    border: 1px;
+    padding: 10px;
+    border-color: blue;
+    color: rgb(0, 0, 0);
+    border-radius: 15%;
+    cursor: pointer;
+   
+}
+
+.btn-primary:hover {
+    background-color: aqua;
+    color: white
+}

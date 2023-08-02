@@ -1,0 +1,13 @@
+.buyers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.buyer {
+    background-color: hotpink;
+    border-color: 2px dotted fuchsia;
+    color: black;
+    padding: 0.5rem
+}
