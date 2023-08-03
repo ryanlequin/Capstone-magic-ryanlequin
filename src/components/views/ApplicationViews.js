@@ -5,12 +5,12 @@ export const ApplicationViews = () => {
     const localMagicUser = localStorage.getItem("magic_user")
     const magicUserObject = JSON.parse(localMagicUser)
 
-    if(magicUserObject.staff) {
+    if (magicUserObject.staff) {
         return <BuyerViews />
     }
     else {
         return <SellerViews />
     }
 
-	
+
 }

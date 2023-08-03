@@ -1,18 +1,18 @@
-import { useEffect, useState} from "react"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
 export const SellerDetails = () => {
-    const {sellerId} = useParams()
+    const { sellerId } = useParams()
     const [seller, updateSeller] = useState({})
 
     useEffect(
         () => {
             fetch(`http://localhost:8088/sellers?_expand=user&userId=${sellerId}`)
-            .then(response => response.json())
-            .then((data) => {
-                const singleSeller = data[0]
-                updateSeller(singleSeller)
-            })
+                .then(response => response.json())
+                .then((data) => {
+                    const singleSeller = data[0]
+                    updateSeller(singleSeller)
+                })
         },
         [sellerId]
     )

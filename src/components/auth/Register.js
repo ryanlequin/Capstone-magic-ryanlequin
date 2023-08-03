@@ -48,7 +48,7 @@ export const Register = (props) => {
     }
 
     const updateSeller = (evt) => {
-        const copy = {...seller}
+        const copy = { ...seller }
         copy[evt.target.id] = evt.target.value
         setSeller(copy)
     }
@@ -60,8 +60,8 @@ export const Register = (props) => {
                 <fieldset>
                     <label htmlFor="fullName"> Full Name </label>
                     <input onChange={updateSeller}
-                           type="text" id="fullName" className="form-control"
-                           placeholder="Enter your name" required autoFocus />
+                        type="text" id="fullName" className="form-control"
+                        placeholder="Enter your name" required autoFocus />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="email"> Email address </label>
@@ -81,18 +81,8 @@ export const Register = (props) => {
                         type="text" id="tel" className="form-control"
                         placeholder=" Enter your phone number" required />
                 </fieldset>
-                {/* <fieldset>
-                    <input onChange={(evt) => {
-                        const copy = {...seller}
-                        copy.isStaff = evt.target.checked
-                        setSeller(copy)
-                    }}
-                        type="checkbox" id="isStaff" />
-                    <label htmlFor="email"> I am an Buyer </label>
-                </fieldset> */}
-                
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button className="register" type="submit"> Register </button>
                 </fieldset>
             </form>
         </main>

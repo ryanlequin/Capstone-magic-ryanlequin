@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom"
 export const CardEdit = () => {
     const navigate = useNavigate()
     const [feedback, setFeedback] = useState("")
-    const {serviceCardId} =useParams()
+    const { serviceCardId } = useParams()
     /*
         TODO: Add the correct default properties to the
         initial state object
@@ -14,7 +14,7 @@ export const CardEdit = () => {
         mint: false,
         price: 0, // Add the "price" property with an initial value of 0
     })
-  
+
     useEffect(() => {
         if (feedback !== "") {
             // Clear feedback to make entire element disappear after 3 seconds
@@ -32,7 +32,7 @@ export const CardEdit = () => {
                     assignCard(cardObject)
                 })
         },
-        [serviceCardId] 
+        [serviceCardId]
     )
     /*
         TODO: Use the useNavigation() hook so you can redirect
@@ -59,15 +59,15 @@ export const CardEdit = () => {
                 setFeedback("Seller card condition saved")
             })
             .then(() => {
-                
+
             })
-        
+
     }
 
     return (<>
         <div className={`${feedback.includes("Error") ? "error" : "feedback"} ${feedback === "" ? "invisible" : "visible"}`}>
-        {feedback}
-    </div>
+            {feedback}
+        </div>
         <form className="cardForm">
             <h2 className="cardForm__title">Edit Card Condition</h2>
             <fieldset>
@@ -84,29 +84,29 @@ export const CardEdit = () => {
                         value={card?.description}
                         onChange={
                             (evt) => {
-                                const copy = {...card}
+                                const copy = { ...card }
                                 copy.description = evt.target.value
-                               assignCard(copy)
+                                assignCard(copy)
                             }
                         }>{card.description}</textarea>
                 </div>
             </fieldset>
             <fieldset>
-          <div className="form-group">
-            <label htmlFor="price">Price:</label>
-            <input
-              type="number" // Use input type "number" for the price
-              className="form-control"
-              placeholder="Enter the price"
-              value={card?.price}
-              onChange={(evt) => {
-                const copy = { ...card };
-                copy.price = parseFloat(evt.target.value); // Parse the input value as a floating-point number
-                assignCard(copy);
-              }}
-            />
-          </div>
-        </fieldset>
+                <div className="form-group">
+                    <label htmlFor="price">Price:</label>
+                    <input
+                        type="number" // Use input type "number" for the price
+                        className="form-control"
+                        placeholder="Enter the price"
+                        value={card?.price}
+                        onChange={(evt) => {
+                            const copy = { ...card };
+                            copy.price = parseFloat(evt.target.value); // Parse the input value as a floating-point number
+                            assignCard(copy);
+                        }}
+                    />
+                </div>
+            </fieldset>
 
             <fieldset>
                 <div className="form-group">
@@ -115,15 +115,15 @@ export const CardEdit = () => {
                         checked={card?.mint}
                         onChange={
                             (evt) => {
-                            const copy = {...card}
-                            copy.mint = evt.target.checked
-                            assignCard(copy)
-                        }
-                     } />
+                                const copy = { ...card }
+                                copy.mint = evt.target.checked
+                                assignCard(copy)
+                            }
+                        } />
                 </div>
             </fieldset>
             <button
-                onClick= {(clickEvent) => handleSaveButtonClick(clickEvent)}
+                onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                 className="btn btn-primary">
                 Save Edit
             </button>

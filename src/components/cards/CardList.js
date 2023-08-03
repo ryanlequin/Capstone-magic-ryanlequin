@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Cards.css"
-import { Link } from "react-router-dom"
 import { Card } from "./Card"
+
+
 
 export const CardList = ({ searchTermState }) => {
     const [cards, setCards] = useState([])
@@ -104,13 +105,13 @@ export const CardList = ({ searchTermState }) => {
                     <button onClick={() => { setMint(false) }}>Show all cards</button>
                 </>
                 : <>
-                    <button onClick={() => navigate("/card/create")}>Add card</button>
-                    <button onClick={() => updateOpenOnly(true)}>To Sell</button>
-                    <button onClick={() => updateOpenOnly(false)}>All my cards</button>
+                   <div className="my--buttons">  <button className="add--card" onClick={() => navigate("/card/create")}>Add card</button>
+                    <button className="to--sell" onClick={() => updateOpenOnly(true)}>To sell</button>
+                    <button className="all--cards" onClick={() => updateOpenOnly(false)}>All cards</button></div>
                 </>
         }
 
-        <h2>List of Cards</h2>
+        <h2>Your Collection</h2>
 
        
         <article className="cards">
@@ -126,7 +127,7 @@ export const CardList = ({ searchTermState }) => {
             }
         </article>
         </>
-
         }
+       
 
 

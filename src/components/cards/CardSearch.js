@@ -7,7 +7,7 @@ export const CardSearch = ({ setterFunction }) => {
                     setterFunction(changeEvent.target.value)
                 }
             }
-        type="text" placeholder="Enter card name"></input>
+        type="text" className="search--bar" placeholder="Search card name"></input>
         </div>
     )
 }

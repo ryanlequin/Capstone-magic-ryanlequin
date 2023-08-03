@@ -6,7 +6,7 @@ export const CardContainer = () => {
     const [searchTerms, setSearchTerms] = useState("")
 
     return <>
-            <CardSearch setterFunction={setSearchTerms}/>
-            <CardList searchTermState={searchTerms}/>
+        <CardSearch setterFunction={setSearchTerms} />
+        <CardList searchTermState={searchTerms} />
     </>
 }

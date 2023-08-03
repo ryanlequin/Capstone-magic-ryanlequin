@@ -40,7 +40,7 @@ export const CardForm = () => {
         })
             .then(response => response.json())
             .then(() => {
-                navigate("/cards")
+                navigate("/")
             })
     }
     //added fieldset for the price under mint fieldset.

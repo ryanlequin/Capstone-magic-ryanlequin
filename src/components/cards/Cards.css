@@ -1,28 +1,55 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
 }
 
 .card {
-    background-color: rgb(247, 236, 223);
-    border: 1px dotted rgb(237, 14, 203);
+    background-color: rgb(255, 249, 242);
+    border: 1px solid rgb(0, 8, 255);
     padding: 0.7rem;
     margin: 0.5rem 0;
 }
 
-.card__delete {
-    margin-left: auto;
-    background-color: rgb(210, 237, 255);
+.card--edit {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.card--edit:hover {
+    background-color: lightgreen;
+    color: black
+}
+
+.card--delete {
     cursor: pointer;
 }
 
-.card__delete:hover {
-    background-color: darkred;
-    color:aliceblue
+.card--delete:hover {
+    background-color: red;
+    color: black
 }
 
-.card__finish {
-    margin-left: auto;
+.sell--card {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sell--card:hover {
+    background-color: yellow ;
+    color: black;
 }
 
 .card__footer {
@@ -35,20 +62,62 @@
 .card__header {
     font-size: large;
     padding: 0 0 1rem 0;
+
 }
 
 .btn-primary {
-    background-color: blanchedalmond;
-    border: 1px;
-    padding: 10px;
-    border-color: blue;
-    color: rgb(0, 0, 0);
-    border-radius: 15%;
     cursor: pointer;
-   
 }
 
 .btn-primary:hover {
-    background-color: aqua;
-    color: white
+    background-color: lightblue;
+    color: black
+}
+
+.add--card {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add--card:hover {
+    background-color: lightblue;
+    color: black
+}
+
+.to--sell {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.to--sell:hover {
+    background-color: lightgreen;
+    color: black
+}
+
+.all--cards {
+    cursor: pointer;
+}
+
+.all--cards:hover {
+    background-color: yellow;
+    color: black
+}
+
+.my--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-left: 180px
+}
+
+.search--bar {
+    float: right;
+    margin-top: 70px;
+    margin-right: 10px;
+
+}
+
+.cardForm {
+    margin-left: 30px;
 }

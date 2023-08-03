@@ -14,16 +14,13 @@ fieldset {
 
 }
 
-.body {
-
-background-image: url('/Users/ryanlequin/workspace/cap-magic-ryanlequin/src/Images/black-lotus-65988.jpg');
-}
-
 
 .form--login {
     display: inline-block;
     margin: 0 auto;
     text-align: left;
+
+    
 }
 
 .form--login>fieldset>input[type="email"] {
@@ -33,6 +30,7 @@ background-image: url('/Users/ryanlequin/workspace/cap-magic-ryanlequin/src/Imag
 .label--login {
     width: 8rem;
     display: inline-block;
+    cursor: pointer;
 }
 
 .form-control {
@@ -66,7 +64,29 @@ background-image: url('/Users/ryanlequin/workspace/cap-magic-ryanlequin/src/Imag
     background-repeat: no-repeat;
 }
 
+
+
 .button--close {
     position: relative;
     bottom: -2rem;
+    
 }
+
+.sign--in {
+    cursor: pointer;
+}
+
+.sign--in:hover {
+    background-color: lightblue;
+    color: black
+    
+}
+
+.register {
+    cursor: pointer;
+}
+.register:hover {
+    background-color: lightgreen;
+    color: black
+}
+

@@ -7,7 +7,7 @@ export const SellerList = () => {
 
     useEffect(
         () => {
-            fetch (`http://localhost:8088/users?isStaff=false`)
+            fetch(`http://localhost:8088/users?isStaff=false`)
                 .then(response => response.json())
                 .then((sellerArray) => {
                     setSellers(sellerArray)
@@ -17,9 +17,9 @@ export const SellerList = () => {
 
     return <article className="sellers">
         {
-            sellers.map(seller => <Seller key={`seller--${seller.id}`} 
-                id={seller.id} 
-                fullName={seller.fullName} 
+            sellers.map(seller => <Seller key={`seller--${seller.id}`}
+                id={seller.id}
+                fullName={seller.fullName}
                 email={seller.email} />)
         }
     </article>
