@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import logo from "./BrandLogo.jpg"
 
 export const CardForm = () => {
     const navigate = useNavigate()
@@ -45,7 +46,11 @@ export const CardForm = () => {
     }
     //added fieldset for the price under mint fieldset.
     return (
+        
         <form className="cardForm">
+             <div>
+            <img className="logo" src={logo} />
+        </div>
             <h2 className="cardForm__title">New Card</h2>
             <fieldset>
                 <div className="form-group">

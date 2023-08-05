@@ -16,7 +16,7 @@ textarea {
 
 body {
  
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(22, 22, 22);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -52,3 +52,4 @@ p {
 .title--main {
   margin-block-end: 0;
 }
+

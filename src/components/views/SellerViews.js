@@ -9,9 +9,7 @@ export const SellerViews = () => {
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1> Magic Card Collector</h1>
-                    <h3>The MTG card collection application</h3>
-
+                    
                     <Outlet />
                 </>
             }>

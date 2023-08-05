@@ -2,14 +2,21 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    color: white;
 }
 
 .navbar__item {
     flex-basis: 20%;
     list-style-type: none;
+    color: white;
+}
+
+
+.navbar__link {
+    color: white;
+   
 }
 
 .navbar__logout {
-    margin-left: auto;
+    margin-left: 1200px;
 }
-

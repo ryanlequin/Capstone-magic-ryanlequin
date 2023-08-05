@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Cards.css"
 import { Card } from "./Card"
-
+import logo from "./BrandLogo.jpg"
 
 
 export const CardList = ({ searchTermState }) => {
@@ -98,7 +98,12 @@ export const CardList = ({ searchTermState }) => {
         [openOnly]
     )
     return <>
-        {
+        
+            <div>
+            <img className="logo" src={logo} />
+        </div>
+
+{
             magicUserObject.staff
                 ? <>
                     <button onClick={() => { setMint(true) }}>Mint only cards</button>
@@ -110,7 +115,6 @@ export const CardList = ({ searchTermState }) => {
                     <button className="all--cards" onClick={() => updateOpenOnly(false)}>All cards</button></div>
                 </>
         }
-
         <h2>Your Collection</h2>
 
        

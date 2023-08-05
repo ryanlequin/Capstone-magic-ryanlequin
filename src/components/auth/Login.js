@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+//added for logo
+import logo from "./BrandLogo.gif"
 
 export const Login = () => {
     const [email, set] = useState("")
@@ -32,7 +34,11 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Magic Card Collector</h1>
+
+                    <div>
+                        <img className="gif" src={logo} />
+                    </div>
+                  
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
@@ -51,7 +57,7 @@ export const Login = () => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Register new account</Link>
+                <Link className="new--account" to="/register">Register new account</Link>
             </section>
         </main>
     )

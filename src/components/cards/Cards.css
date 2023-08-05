@@ -1,14 +1,23 @@
 h1 {
+    font-family: 'Abril Fatface', cursive;
     text-align: center;
 }
 
 h2 {
     text-align: left;
     margin-left: 10px;
+    color: white;
 }
+.collection {
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+
 
 h3 {
     text-align: center;
+    color: white;
 }
 
 .cards {
@@ -17,10 +26,10 @@ h3 {
 }
 
 .card {
-    background-color: rgb(255, 249, 242);
-    border: 1px solid rgb(0, 8, 255);
+    background-color:  rgb(255, 229, 163);
+    border: 1px solid white;
     padding: 0.7rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0
 }
 
 .card--edit {
@@ -77,6 +86,11 @@ h3 {
 .add--card {
     cursor: pointer;
     margin-right: 10px;
+    border: none;
+    border-radius: 40%;
+    padding: 20px;
+   
+    
 }
 
 .add--card:hover {
@@ -87,6 +101,10 @@ h3 {
 .to--sell {
     cursor: pointer;
     margin-right: 10px;
+    border: none;
+    border-radius: 40%;
+    padding: 20px;
+   
 }
 
 .to--sell:hover {
@@ -96,6 +114,10 @@ h3 {
 
 .all--cards {
     cursor: pointer;
+    border: none;
+    border-radius: 40%;
+    padding: 20px;
+   
 }
 
 .all--cards:hover {
@@ -104,20 +126,30 @@ h3 {
 }
 
 .my--buttons {
-    display: flex;
+   
     justify-content: center;
     align-items: center;
-    height: 50px;
-    margin-left: 180px
+    margin-left: 40px;
 }
 
 .search--bar {
     float: right;
-    margin-top: 70px;
+    margin-top: 550px;
     margin-right: 10px;
 
 }
 
 .cardForm {
     margin-left: 30px;
+}
+
+.logo {
+    width: 400px;
+    height: 400px;
+   align-content: center;
+   
+    
+}
+.form-group {
+    color: white;
 }
