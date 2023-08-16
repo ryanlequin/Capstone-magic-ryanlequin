@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import image from "./magiccardback.jpeg"
 
 
 export const Card = ({ cardObject, currentUser, buyers, getAllCards }) => {
@@ -107,6 +107,9 @@ export const Card = ({ cardObject, currentUser, buyers, getAllCards }) => {
 
     return <section className="card" key={`card--${cardObject.id}`}>
         <header>
+        <div>
+            <img className="cardimage" src={image} />
+        </div>
 
         </header>
         <section>{cardObject.description}</section>

@@ -127,6 +127,7 @@ export const CardEdit = () => {
                 className="btn btn-primary">
                 Save Edit
             </button>
+            
         </form></>
     )
 }

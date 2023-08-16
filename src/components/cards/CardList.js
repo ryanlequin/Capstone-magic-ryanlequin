@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Cards.css"
 import { Card } from "./Card"
-import logo from "./BrandLogo.jpg"
+import logo from "./BrandLogo.gif"
 
 
 export const CardList = ({ searchTermState }) => {
@@ -100,7 +100,7 @@ export const CardList = ({ searchTermState }) => {
     return <>
         
             <div>
-            <img className="logo" src={logo} />
+            <img className="gif" src={logo} />
         </div>
 
 {
@@ -119,6 +119,7 @@ export const CardList = ({ searchTermState }) => {
 
        
         <article className="cards">
+           
             {
                 filteredCards.map(
                     (card) =>
